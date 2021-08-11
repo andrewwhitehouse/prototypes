@@ -1,0 +1,43 @@
+<html>
+<body>
+<style>
+.chapter {margin-top: 20px; line-height: 150%;}
+</style>
+<figure>
+    <figcaption>Listen to Choice Theory, from the Akimbo podcast</figcaption>
+    <audio
+        controls
+        id="pod1"
+        src="https://sphinx.acast.com/akimbo/choicetheory/media.mp3">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+</figure>
+    <ul>
+<li>
+    <div class="chapter">
+    <a href="#pod1" onclick="skipAudio('pod1', '85.034')" class="skip-btn">Never on Sunday</a>
+      </a>
+    </div>
+    <br>
+    Who gets to choose, and who doesn't?
+</li>
+<li>
+    <div class="chapter">
+    <a href="#pod1" onclick="skipAudio('pod1', '754.27')" class="skip-btn">How to Pick One Idea</a>
+      </a>
+    </div>
+</li>
+    </ul>
+<script type="text/javascript">
+    function skipAudio(plyr, skip) {
+
+        var plyr = document.getElementById(plyr);
+
+        var currentTime = plyr.currentTime;
+        plyr.currentTime = skip;
+
+    }
+</script>
+</body>
+</html>
